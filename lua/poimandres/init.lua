@@ -47,7 +47,7 @@ local config = {
 
 function M.setup(opts)
 	opts = opts or {}
-	vim.g.poimandres_variant = opts.dark_variant or 'main'
+	-- vim.g.poimandres_variant = opts.dark_variant or 'main'
 
 	if opts.groups and type(opts.groups.headings) == 'string' then
 		opts.groups.headings = {

@@ -24,10 +24,12 @@ local variants = {
 
 local palette = {}
 
-if vim.o.background == "light" then
-	palette = variants.main
-else
-	palette = variants[(vim.g.poimandres_variant == "storm" and "storm") or "main"]
-end
+palette = variants.main
+
+-- if vim.o.background == "light" then
+-- 	palette = variants.main
+-- else
+-- 	palette = variants[(vim.g.poimandres_variant == "storm" and "storm") or "main"]
+-- end
 
 return palette
