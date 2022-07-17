@@ -14,9 +14,9 @@ Plugin support will be added as I personally need it, or when it is requested.
 use 'olivercederborg/poimandres.nvim'
 ```
 
-## Configuration
+## Usage:
 
-**Lua**: 
+**Lua setup**: 
 
 ```lua
 -- lua/user/colorscheme.lua
@@ -34,6 +34,17 @@ poimandres.setup {
 
 -- remember to set the colorscheme
 vim.cmd('colorscheme poimandres')
+```
+To enable Poimandres for `Lualine`, just set the theme in your Lualine configuration:
+
+```lua
+require('lualine').setup {
+  options = {
+    -- ... your lualine config
+    theme = 'poimandres'
+    -- ... your lualine config
+  }
+}
 ```
 
 ## Related
