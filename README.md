@@ -1,8 +1,10 @@
 *Still under development for closest experience to the original VSCode theme.*
 
-# poimandres.nvim
+# Poimandres for Neovim
 
-Neovim version of the amazing [Poimandres theme](https://github.com/drcmda/poimandres-theme)
+Neovim version of the amazing [Poimandres theme](https://github.com/drcmda/poimandres-theme). All variants of the theme will be available for use.
+
+Plugin support will be added as I personally need it, or when it is requested.
 
 ## Installation
 
@@ -32,4 +34,16 @@ poimandres.setup {
 
 -- remember to set the colorscheme
 vim.cmd('colorscheme poimandres')
+```
+
+## Related
+
+- [poimandres-theme](https://github.com/drcmda/poimandres-theme): VSCode version
+- [poimandres-alacritty](https://github.com/z0al/poimandres-alacritty): Alacritty version
+- [poimandres-iterm](https://github.com/alii/poimandres-iterm): Iterm version
+
+### Hyper theme
+
+```bash
+hyper i hyper-pmndrs
 ```
