@@ -41,6 +41,7 @@ vim.cmd('colorscheme poimandres')
 - [poimandres-theme](https://github.com/drcmda/poimandres-theme): VSCode version
 - [poimandres-alacritty](https://github.com/z0al/poimandres-alacritty): Alacritty version
 - [poimandres-iterm](https://github.com/alii/poimandres-iterm): Iterm version
+- [poimandres-wezterm](https://github.com/olivercederborg/poimandres-wezterm): Wezterm version
 
 ### Hyper theme
 
