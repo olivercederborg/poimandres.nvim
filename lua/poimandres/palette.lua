@@ -18,6 +18,7 @@ local variants = {
 		background2 = '#1B1E28',
 		background3 = '#171922',
 		text = '#E4F0FB',
+		white = '#FFFFFF',
 		none = 'NONE',
 	},
 }

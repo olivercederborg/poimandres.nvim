@@ -63,7 +63,7 @@ function M.get(config)
 		RedrawDebugClear = { fg = '#ffffff', bg = p.yellow },
 		RedrawDebugComposed = { fg = '#ffffff', bg = p.teal2 },
 		RedrawDebugRecompose = { fg = '#ffffff', bg = p.pink3 },
-		Search = { fg = p.background3, bg = p.blueGray3 },
+		Search = { fg = p.white, bg = p.blueGray3 },
 		SpecialKey = { fg = p.teal1 },
 		SpellBad = { sp = p.pink3, style = 'undercurl' },
 		SpellCap = { sp = p.blue1, style = 'undercurl' },
@@ -85,85 +85,82 @@ function M.get(config)
 		-- Whitespace = {},
 		WildMenu = { link = 'IncSearch' },
 
-		Boolean = { fg = p.teal1 },
-		Character = { fg = p.teal1 },
-		Comment = { fg = p.blueGray3, style = styles.italic },
-		Conditional = { fg = p.blueGray1 },
-		Constant = { fg = p.text },
-		Debug = { fg = p.yellow },
-		Define = { fg = p.blue2 },
-		Delimiter = { fg = p.blueGray1 },
-		Error = { fg = p.pink3 },
-		Exception = { fg = p.teal1 },
-		Float = { fg = p.teal1 },
-		Function = { fg = p.blue2 },
-		Identifier = { fg = p.blue3 },
-		-- Ignore = {},
-		Include = { fg = p.blue3 },
-		Keyword = { fg = p.teal2 },
-		Label = { fg = p.text },
-		Macro = { fg = p.blue2 },
-		Number = { fg = p.teal1 },
-		Operator = { fg = p.blue4 },
-		PreCondit = { fg = p.pink2 },
-		PreProc = { fg = p.pink2 },
-		Repeat = { fg = p.text },
-		Special = { fg = p.teal1 },
-		SpecialChar = { fg = p.pink2 },
-		SpecialComment = { link = 'Comment' },
-		Statement = { fg = p.blue4 },
-		StorageClass = { fg = p.blue3 },
-		String = { fg = p.teal1 },
-		Structure = { fg = p.blue3 },
-		Tag = { fg = p.blue3 },
-		Todo = { fg = p.yellow },
-		Type = { fg = p.blue4 },
-		Typedef = { fg = p.blue3 },
-		Underlined = { style = 'underline' },
+		-- These groups are not listed as default vim groups,
+		-- but they are defacto standard group names for syntax highlighting.
+		-- commented out groups should chain up to their "preferred" group by
+		-- default,
+		-- Uncomment and edit if you want more specific syntax highlighting.
 
-		htmlArg = { fg = p.blue4 },
-		htmlBold = { style = 'bold' },
-		htmlEndTag = { fg = p.text },
-		htmlH1 = { fg = groups.headings.h1, style = 'bold' },
-		htmlH2 = { fg = groups.headings.h2, style = 'bold' },
-		htmlH3 = { fg = groups.headings.h3, style = 'bold' },
-		htmlH4 = { fg = groups.headings.h4, style = 'bold' },
-		htmlH5 = { fg = groups.headings.h5, style = 'bold' },
-		htmlItalic = { style = styles.italic },
-		htmlLink = { fg = groups.link },
-		htmlTag = { fg = p.text },
-		htmlTagN = { fg = p.text },
-		htmlTagName = { fg = p.teal1 },
+		Constant = { fg = p.white }, -- (preferred) any constant
+		String = { fg = p.teal1 }, --   a string constant: "this is a string"
+		Character = { fg = p.teal1 }, --  a character constant: 'c', '\n'
+		Number = { fg = p.teal1 }, --   a number constant: 234, 0xff
+		Boolean = { fg = p.teal1 }, --  a boolean constant: TRUE, false
+		Float = { fg = p.teal1 }, --    a floating point constant: 2.3e10
 
-		markdownDelimiter = { fg = p.blue3 },
-		markdownH1 = { fg = groups.headings.h1, style = 'bold' },
-		markdownH1Delimiter = { link = 'markdownH1' },
-		markdownH2 = { fg = groups.headings.h2, style = 'bold' },
-		markdownH2Delimiter = { link = 'markdownH2' },
-		markdownH3 = { fg = groups.headings.h3, style = 'bold' },
-		markdownH3Delimiter = { link = 'markdownH3' },
-		markdownH4 = { fg = groups.headings.h4, style = 'bold' },
-		markdownH4Delimiter = { link = 'markdownH4' },
-		markdownH5 = { fg = groups.headings.h5, style = 'bold' },
-		markdownH5Delimiter = { link = 'markdownH5' },
-		markdownH6 = { fg = groups.headings.h6, style = 'bold' },
-		markdownH6Delimiter = { link = 'markdownH6' },
-		markdownLinkText = { fg = groups.link, style = 'underline' },
-		markdownUrl = { link = 'markdownLinkText' },
+		Identifier = { fg = p.blueGray2 }, -- (preferred) any variable name
+		Function = { fg = p.blue2 }, -- function name (also: methods for classes)
 
-		mkdCode = { fg = p.text, style = styles.italic },
-		mkdCodeDelimiter = { fg = p.pink2 },
-		mkdCodeEnd = { fg = p.teal1 },
-		mkdCodeStart = { fg = p.teal1 },
-		mkdFootnotes = { fg = p.blue3 },
-		mkdID = { fg = p.teal2, style = 'underline' },
-		mkdInlineURL = { fg = groups.link, style = 'underline' },
-		mkdLink = { link = 'mkdInlineURL' },
-		mkdLinkDef = { link = 'mkdInlineURL' },
-		mkdListItemLine = { fg = p.text },
-		mkdRule = { fg = p.blue2 },
-		mkdURL = { link = 'mkdInlineURL' },
+		Statement = { fg = p.text }, -- (preferred) any statement
+		Conditional = { fg = p.blueGray1 }, --  if, then, else, endif, switch, etc.
+		Repeat = { fg = p.blueGray1 }, --   for, do, while, etc.
+		Label = { fg = p.text }, --    case, default, etc.
+		Operator = { fg = p.blue3 }, -- "sizeof", "+", "*", etc.
+		Keyword = { fg = p.blue3 }, --  any other keyword
+		-- Exception     = { }, --  try, catch, throw
 
+		PreProc = { fg = p.blueGray2 }, -- (preferred) generic Preprocessor
+		-- Include       = { }, --  preprocessor #include
+		-- Define        = { }, --   preprocessor #define
+		-- Macro         = { }, --    same as Define
+		-- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
+
+		Type = { fg = p.blueGray2 }, -- (preferred) int, long, char, etc.
+		Structure = { fg = p.blue3 }, --  struct, union, enum, etc.
+		-- StorageClass  = { }, -- static, register, volatile, etc.
+		-- Typedef = { fg = p.blueGray1 }, --  A typedef
+
+		Special = { fg = p.blueGray2 }, -- (preferred) any special symbol
+		-- SpecialChar   = { }, --  special character in a constant
+		-- Tag           = { }, --    you can use CTRL-] on this
+		-- Delimiter     = { }, --  character that needs attention
+		-- SpecialComment= { }, -- special things inside a comment
+		-- Debug         = { }, --    debugging statements
+
+		Comment = { fg = p.blueGray3 }, -- (preferred) any special symbol
+
+		Underlined = { style = 'underline' }, -- (preferred) text that stands out, HTML links
+		Bold = { style = 'bold' },
+		Italic = { style = 'italic' },
+
+		-- ("Ignore", below, may be invisible...)
+		-- Ignore = { }, -- (preferred) left blank, hidden  |hl-Ignore|
+
+		Error = { fg = p.pink3 }, -- (preferred) any erroneous construct
+		Todo = { bg = p.yellow, fg = p.background3 }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+
+		qfLineNr = { fg = p.blueGray3 },
+		qfFileName = { fg = p.blueGray2 },
+
+		htmlH1 = { fg = p.teal1, style = 'bold' },
+		htmlH2 = { fg = p.teal1, style = 'bold' },
+
+		-- mkdHeading = { fg = c.orange, style = "bold" },
+		-- mkdCode = { bg = c.terminal_black, fg = c.fg },
+		mkdCodeDelimiter = { bg = p.background3, fg = p.text },
+		mkdCodeStart = { fg = p.teal2, style = 'bold' },
+		mkdCodeEnd = { fg = p.teal2, style = 'bold' },
+		mkdLink = { fg = p.blue1, style = 'underline' },
+
+		markdownHeadingDelimiter = { fg = p.blue4, style = 'bold' },
+		markdownCode = { fg = p.teal2 },
+		markdownCodeBlock = { fg = p.teal2 },
+		markdownH1 = { fg = p.teal1, style = 'bold' },
+		markdownH2 = { fg = p.teal1, style = 'bold' },
+		markdownLinkText = { fg = p.blue1, style = 'underline' },
+
+		debugPC = { bg = p.background1 }, -- used for highlighting the current line in terminal-debug
+		debugBreakpoint = { bg = p.background2, fg = p.pink3 }, -- used for breakpoint colors in terminal-debug
 		DiagnosticError = { fg = groups.error },
 		DiagnosticHint = { fg = groups.hint },
 		DiagnosticInfo = { fg = groups.info },
@@ -193,37 +190,40 @@ function M.get(config)
 		DiagnosticVirtualTextInfo = { fg = groups.info },
 		DiagnosticVirtualTextWarn = { fg = groups.warn },
 
+		TSVariable = { fg = p.white },
 		-- TSAttribute = {},
-		TSBoolean = { link = 'Boolean' },
-		TSCharacter = { link = 'Character' },
+		TSKeywordReturn = { fg = p.teal2 },
+		-- TSBoolean = { link = 'Boolean' },
+		-- TSCharacter = { link = 'Character' },
 		TSComment = { link = 'Comment' },
-		TSConditional = { link = 'Conditional' },
-		TSConstBuiltin = { fg = p.text },
+		-- TSConditional = { link = 'Conditional' },
+		TSVariableBuiltin = { fg = p.pink2 },
+		-- TSConstBuiltin = { fg = p.text },
 		-- TSConstMacro = {},
-		TSConstant = { fg = p.blue4 },
-		TSConstructor = { fg = p.blue3 },
+		-- TSConstant = { fg = p.text },
+		TSConstructor = { fg = p.white },
 		-- TSEmphasis = {},
 		-- TSError = {},
 		-- TSException = {},
-		TSField = { fg = p.blue2 },
+		TSField = { fg = p.text },
 		-- TSFloat = {},
-		TSFuncBuiltin = { fg = p.text },
+		-- TSFuncBuiltin = { fg = p.text },
 		-- TSFuncMacro = {},
 		TSFunction = { fg = p.blue2 },
 		TSInclude = { fg = p.teal1 },
-		TSKeyword = { fg = p.blue4 },
-		-- TSKeywordFunction = {},
-		TSKeywordOperator = { fg = p.blue3 },
-		TSLabel = { fg = p.blue2 },
+		-- TSKeyword = { fg = p.teal1 },
+		-- TSKeywordFunction = { fg = p.blue3 },
+		-- TSKeywordOperator = { fg = p.blue3 },
+		-- TSLabel = { fg = p.blue3 },
 		-- TSLiteral = {},
-		-- TSMethod = {},
+		TSMethod = { fg = p.text },
 		-- TSNamespace = {},
 		-- TSNone = {},
-		TSNumber = { link = 'Number' },
-		TSOperator = { fg = p.blueGray3 },
-		TSParameter = { fg = p.text, style = styles.italic },
+		-- TSNumber = { link = 'Number' },
+		-- TSOperator = { fg = p.blueGray3 },
+		TSParameter = { fg = p.text },
 		-- TSParameterReference = {},
-		TSProperty = { fg = p.text, style = styles.italic },
+		TSProperty = { fg = p.text },
 		TSPunctBracket = { fg = groups.punctuation },
 		TSPunctDelimiter = { fg = groups.punctuation },
 		TSPunctSpecial = { fg = groups.punctuation },
@@ -232,18 +232,29 @@ function M.get(config)
 		TSString = { link = 'String' },
 		TSStringEscape = { fg = p.yellow },
 		-- TSStringRegex = {},
-		TSStringSpecial = { link = 'TSString' },
+		-- TSStringSpecial = { fg = p.teal1 },
 		-- TSSymbol = {},
 		TSTag = { fg = p.teal1 },
 		TSTagDelimiter = { fg = p.text },
+		TSTagAttribute = { fg = p.blue2, style = 'italic' },
 		TSText = { fg = p.text },
-		TSTitle = { fg = groups.headings.h1, style = 'bold' },
-		TSType = { link = 'Type' },
-		-- TSTypeBuiltin = {},
-		TSURI = { fg = groups.link },
+		-- TSTitle = { fg = groups.headings.h1, style = 'bold' },
+		-- TSType = { link = 'Type' },
+		TSTypeBuiltin = { link = 'Type' },
+		-- TSURI = { fg = groups.link },
 		-- TSUnderline = {},
-		TSVariable = { fg = p.text, style = styles.italic },
-		TSVariableBuiltin = { fg = p.blueGray1 },
+
+		-- tsx/jsx
+		typescriptVariable = { fg = p.blue3 },
+		typescriptExport = { fg = p.teal1 },
+		typescriptVariableDeclaration = { fg = p.blue2 },
+		typescriptBlock = { fg = p.text },
+		typescriptIdentifierName = { fg = p.blueGray2 },
+		typescriptTSInclude = { fg = p.teal1 },
+		typescriptCastKeyword = { fg = p.blueGray2 },
+		typescriptEnum = { fg = p.blue4 },
+		typescriptTypeCast = { fg = p.blueGray2 },
+		typescriptParenExp = { fg = p.blueGray2 },
 
 		-- vim.lsp.buf.document_highlight()
 		LspReferenceText = { bg = p.blue2 },
@@ -392,4 +403,3 @@ function M.get(config)
 end
 
 return M
-
