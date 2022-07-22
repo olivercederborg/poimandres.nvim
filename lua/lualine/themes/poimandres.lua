@@ -9,12 +9,12 @@ poimandres.normal = {
 }
 
 poimandres.insert = {
-	a = { fg = palette.background2, bg = palette.yellow, gui = 'bold' },
+	a = { fg = palette.background2, bg = palette.blue1, gui = 'bold' },
 	b = { fg = palette.text, bg = palette.background1 },
 }
 
 poimandres.visual = {
-	a = { fg = palette.background2, bg = palette.blue1, gui = 'bold' },
+	a = { fg = palette.background2, bg = palette.yellow, gui = 'bold' },
 	b = { fg = palette.text, bg = palette.background1 },
 }
 
