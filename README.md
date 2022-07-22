@@ -2,11 +2,15 @@
 
 # Poimandres for Neovim
 
-Neovim version of the amazing [Poimandres theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support. 
+Neovim version of [poimandres vscode theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support. 
 
 All variants of the theme will be available for use.
 
 Plugin support will be added as I personally need it, or when it is requested.
+
+## Screenshots
+
+![Poimandres Base Theme](https://user-images.githubusercontent.com/47901349/180445055-92480553-0652-4155-8d41-835fec27245b.png)
 
 ## Installation
 
