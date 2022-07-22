@@ -98,7 +98,7 @@ function M.get(config)
 		Boolean = { fg = p.teal1 }, --  a boolean constant: TRUE, false
 		Float = { fg = p.teal1 }, --    a floating point constant: 2.3e10
 
-		Identifier = { fg = p.blueGray2 }, -- (preferred) any variable name
+		Identifier = { fg = p.blueGray1 }, -- (preferred) any variable name
 		Function = { fg = p.blue2 }, -- function name (also: methods for classes)
 
 		Statement = { fg = p.text }, -- (preferred) any statement
@@ -109,7 +109,7 @@ function M.get(config)
 		Keyword = { fg = p.blue3 }, --  any other keyword
 		-- Exception     = { }, --  try, catch, throw
 
-		PreProc = { fg = p.blueGray2 }, -- (preferred) generic Preprocessor
+		PreProc = { fg = p.text }, -- (preferred) generic Preprocessor
 		-- Include       = { }, --  preprocessor #include
 		-- Define        = { }, --   preprocessor #define
 		-- Macro         = { }, --    same as Define
@@ -118,12 +118,12 @@ function M.get(config)
 		Type = { fg = p.blueGray2 }, -- (preferred) int, long, char, etc.
 		Structure = { fg = p.blue3 }, --  struct, union, enum, etc.
 		-- StorageClass  = { }, -- static, register, volatile, etc.
-		-- Typedef = { fg = p.blueGray1 }, --  A typedef
+		Typedef = { fg = p.blueGray1 }, --  A typedef
 
 		Special = { fg = p.blueGray2 }, -- (preferred) any special symbol
 		-- SpecialChar   = { }, --  special character in a constant
-		-- Tag           = { }, --    you can use CTRL-] on this
-		-- Delimiter     = { }, --  character that needs attention
+		Tag = { fg = p.teal1 }, --    you can use CTRL-] on this
+		Delimiter = { fg = p.blueGray2 }, --  character that needs attention
 		-- SpecialComment= { }, -- special things inside a comment
 		-- Debug         = { }, --    debugging statements
 
@@ -201,7 +201,7 @@ function M.get(config)
 		-- TSConstBuiltin = { fg = p.text },
 		-- TSConstMacro = {},
 		-- TSConstant = { fg = p.text },
-		TSConstructor = { fg = p.white },
+		TSConstructor = { fg = p.blue2 },
 		-- TSEmphasis = {},
 		-- TSError = {},
 		-- TSException = {},
@@ -213,14 +213,14 @@ function M.get(config)
 		TSInclude = { fg = p.teal1 },
 		-- TSKeyword = { fg = p.teal1 },
 		-- TSKeywordFunction = { fg = p.blue3 },
-		-- TSKeywordOperator = { fg = p.blue3 },
+		-- TSKeywordOperator = { fg = p.yellow },
 		-- TSLabel = { fg = p.blue3 },
 		-- TSLiteral = {},
 		TSMethod = { fg = p.text },
 		-- TSNamespace = {},
 		-- TSNone = {},
 		-- TSNumber = { link = 'Number' },
-		-- TSOperator = { fg = p.blueGray3 },
+		TSOperator = { link = 'Operator' },
 		TSParameter = { fg = p.text },
 		-- TSParameterReference = {},
 		TSProperty = { fg = p.text },
@@ -239,13 +239,13 @@ function M.get(config)
 		TSTagAttribute = { fg = p.blue2, style = 'italic' },
 		TSText = { fg = p.text },
 		-- TSTitle = { fg = groups.headings.h1, style = 'bold' },
-		-- TSType = { link = 'Type' },
-		TSTypeBuiltin = { link = 'Type' },
-		-- TSURI = { fg = groups.link },
+		TSType = { link = 'Type' },
+		TSTypeBuiltin = { fg = p.blueGray1},
+		TSURI = { fg = groups.link },
 		-- TSUnderline = {},
 
 		-- tsx/jsx
-		typescriptVariable = { fg = p.blue3 },
+		typescriptVariable = { fg = p.blue2 },
 		typescriptExport = { fg = p.teal1 },
 		typescriptVariableDeclaration = { fg = p.blue2 },
 		typescriptBlock = { fg = p.text },
@@ -255,6 +255,7 @@ function M.get(config)
 		typescriptEnum = { fg = p.blue4 },
 		typescriptTypeCast = { fg = p.blueGray2 },
 		typescriptParenExp = { fg = p.blueGray2 },
+		typescriptObjectType = { fg = p.blueGray1 },
 
 		-- vim.lsp.buf.document_highlight()
 		LspReferenceText = { bg = p.blue2 },
