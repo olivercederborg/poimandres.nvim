@@ -2,7 +2,9 @@
 
 # Poimandres for Neovim
 
-Neovim version of the amazing [Poimandres theme](https://github.com/drcmda/poimandres-theme). All variants of the theme will be available for use.
+Neovim version of the amazing [Poimandres theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support. 
+
+All variants of the theme will be available for use.
 
 Plugin support will be added as I personally need it, or when it is requested.
 
