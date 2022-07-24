@@ -36,7 +36,7 @@ function M.get(config)
 		diffAdded = { link = 'DiffAdd' },
 		diffChanged = { link = 'DiffChange' },
 		diffRemoved = { link = 'DiffDelete' },
-		Directory = { fg = p.blueGray3, bg = p.none },
+		Directory = { fg = p.blue3, bg = p.none },
 		-- EndOfBuffer = {},
 		ErrorMsg = { fg = p.pink3, style = 'bold' },
 		FloatBorder = { fg = groups.border },
@@ -45,7 +45,7 @@ function M.get(config)
 		Folded = { fg = p.text, bg = groups.panel },
 		IncSearch = { fg = p.background3, bg = p.blue2 },
 		LineNr = { fg = p.blueGray3 },
-		MatchParen = { fg = p.text, bg = p.blueGray3 },
+		MatchParen = { bg = p.blueGray3, fg = p.background3 },
 		ModeMsg = { fg = p.blue3 },
 		MoreMsg = { fg = p.blue3 },
 		NonText = { fg = p.blue4 },
@@ -79,7 +79,7 @@ function M.get(config)
 		TabLineSel = { fg = p.text, bg = p.background1 },
 		Title = { fg = p.text },
 		VertSplit = { fg = groups.border, bg = styles.vert_split },
-		Visual = { bg = p.blueGray3 },
+		Visual = { fg = p.text, bg = p.blueGray3 },
 		-- VisualNOS = {},
 		WarningMsg = { fg = p.yellow },
 		-- Whitespace = {},
@@ -107,7 +107,7 @@ function M.get(config)
 		Label = { fg = p.text }, --    case, default, etc.
 		Operator = { fg = p.blue3 }, -- "sizeof", "+", "*", etc.
 		Keyword = { fg = p.blue3 }, --  any other keyword
-		Exception = { fg = p.teal2 }, --  try, catch, throw
+		Exception = { fg = p.blueGray1 }, --  try, catch, throw
 
 		PreProc = { fg = p.text }, -- (preferred) generic Preprocessor
 		-- Include       = { }, --  preprocessor #include
@@ -207,14 +207,14 @@ function M.get(config)
 		-- TSException = {},
 		TSField = { fg = p.text },
 		-- TSFloat = {},
-		-- TSFuncBuiltin = { fg = p.text },
+		TSFuncBuiltin = { fg = p.blue2 },
 		-- TSFuncMacro = {},
 		TSFunction = { link = 'Function' },
 		TSInclude = { fg = p.teal1 },
 		TSKeyword = { fg = p.teal1 },
 		-- TSKeywordFunction = { fg = p.teal1 },
 		-- TSKeywordOperator = { fg = p.yellow },
-		-- TSLabel = { fg = p.blue3 },
+		TSLabel = { fg = p.blue3 },
 		-- TSLiteral = {},
 		TSMethod = { fg = p.white },
 		-- TSNamespace = {},
@@ -234,11 +234,11 @@ function M.get(config)
 		-- TSStringRegex = {},
 		-- TSStringSpecial = { fg = p.teal1 },
 		-- TSSymbol = {},
-		TSTag = { link = 'TSConstructor'},
+		TSTag = { link = 'TSConstructor' },
 		TSTagDelimiter = { fg = p.blueGray2 },
 		TSTagAttribute = { fg = p.blue3, style = 'italic' },
 		TSText = { fg = p.text },
-		-- TSTitle = { fg = groups.headings.h1, style = 'bold' },
+		TSTitle = { fg = groups.headings.h1, style = 'bold' },
 		TSType = { link = 'Type' },
 		TSTypeBuiltin = { link = 'Type' },
 		TSURI = { fg = groups.link },
@@ -265,6 +265,15 @@ function M.get(config)
 		-- lsp-highlight-codelens
 		LspCodeLens = { fg = p.blueGray1 }, -- virtual text of code lens
 		LspCodeLensSeparator = { fg = p.blueGray3 }, -- separator between two or more code lens
+
+		-- nvim-ts-rainbow
+		rainbowcol1 = { fg = p.blue1 },
+		rainbowcol2 = { fg = p.teal1 },
+		rainbowcol3 = { fg = p.yellow },
+		rainbowcol4 = { fg = p.blue2 },
+		rainbowcol5 = { fg = p.teal2 },
+		rainbowcol6 = { fg = p.pink3 },
+		rainbowcol7 = { fg = p.blue3 },
 
 		-- romgrk/barbar.nvim
 		BufferCurrent = { fg = p.text, bg = p.background2 },
@@ -306,8 +315,8 @@ function M.get(config)
 		NvimTreeFileNew = { fg = p.teal1 },
 		NvimTreeFileRenamed = { fg = p.blueGray3 },
 		NvimTreeFileStaged = { fg = p.blue1 },
-		NvimTreeFolderIcon = { fg = p.blueGray3 },
-		NvimTreeFolderName = { fg = p.blue4 },
+		NvimTreeFolderIcon = { fg = p.blue3 },
+		NvimTreeFolderName = { fg = p.blue3 },
 		NvimTreeGitDeleted = { fg = groups.git_delete },
 		NvimTreeGitDirty = { fg = groups.git_dirty },
 		NvimTreeGitIgnored = { fg = groups.git_ignore },
