@@ -92,11 +92,11 @@ function M.get(config)
 		-- Uncomment and edit if you want more specific syntax highlighting.
 
 		Constant = { fg = p.white }, -- (preferred) any constant
-		String = { fg = p.teal1 }, --   a string constant: "this is a string"
-		Character = { fg = p.teal1 }, --  a character constant: 'c', '\n'
-		Number = { fg = p.teal1 }, --   a number constant: 234, 0xff
-		Boolean = { fg = p.teal1 }, --  a boolean constant: TRUE, false
-		Float = { fg = p.teal1 }, --    a floating point constant: 2.3e10
+		String = { fg = p.text }, --   a string constant: "this is a string"
+		Character = { fg = p.yellow }, --  a character constant: 'c', '\n'
+		Number = { fg = p.pink2 }, --   a number constant: 234, 0xff
+		Boolean = { fg = p.pink2 }, --  a boolean constant: TRUE, false
+		Float = { fg = p.pink2 }, --    a floating point constant: 2.3e10
 
 		Identifier = { fg = p.blueGray1 }, -- (preferred) any variable name
 		Function = { fg = p.blue2 }, -- function name (also: methods for classes)
@@ -107,7 +107,7 @@ function M.get(config)
 		Label = { fg = p.text }, --    case, default, etc.
 		Operator = { fg = p.blue3 }, -- "sizeof", "+", "*", etc.
 		Keyword = { fg = p.blue3 }, --  any other keyword
-		-- Exception     = { }, --  try, catch, throw
+		Exception = { fg = p.teal2 }, --  try, catch, throw
 
 		PreProc = { fg = p.text }, -- (preferred) generic Preprocessor
 		-- Include       = { }, --  preprocessor #include
@@ -115,16 +115,16 @@ function M.get(config)
 		-- Macro         = { }, --    same as Define
 		-- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
 
-		Type = { fg = p.blueGray2 }, -- (preferred) int, long, char, etc.
-		Structure = { fg = p.blue3 }, --  struct, union, enum, etc.
+		Type = { fg = p.blueGray1 }, -- (preferred) int, long, char, etc.
+		Structure = { fg = p.blueGray1 }, --  struct, union, enum, etc.
 		-- StorageClass  = { }, -- static, register, volatile, etc.
-		Typedef = { fg = p.blueGray1 }, --  A typedef
+		-- Typedef = { fg = p.blueGray1 }, --  A typedef
 
 		Special = { fg = p.blueGray2 }, -- (preferred) any special symbol
 		-- SpecialChar   = { }, --  special character in a constant
 		Tag = { fg = p.teal1 }, --    you can use CTRL-] on this
 		Delimiter = { fg = p.blueGray2 }, --  character that needs attention
-		-- SpecialComment= { }, -- special things inside a comment
+		SpecialComment = { fg = p.blueGray1 }, -- special things inside a comment
 		-- Debug         = { }, --    debugging statements
 
 		Comment = { fg = p.blueGray3 }, -- (preferred) any special symbol
@@ -192,16 +192,16 @@ function M.get(config)
 
 		TSVariable = { fg = p.white },
 		-- TSAttribute = {},
-		TSKeywordReturn = { fg = p.teal2 },
-		-- TSBoolean = { link = 'Boolean' },
+		-- TSKeywordReturn = { fg = p.teal2 },
+		TSBoolean = { link = 'Boolean' },
 		-- TSCharacter = { link = 'Character' },
 		TSComment = { link = 'Comment' },
 		-- TSConditional = { link = 'Conditional' },
 		TSVariableBuiltin = { fg = p.pink2 },
-		-- TSConstBuiltin = { fg = p.text },
+		TSConstBuiltin = { fg = p.text },
 		-- TSConstMacro = {},
 		-- TSConstant = { fg = p.text },
-		TSConstructor = { fg = p.blue2 },
+		TSConstructor = { fg = p.white },
 		-- TSEmphasis = {},
 		-- TSError = {},
 		-- TSException = {},
@@ -209,21 +209,21 @@ function M.get(config)
 		-- TSFloat = {},
 		-- TSFuncBuiltin = { fg = p.text },
 		-- TSFuncMacro = {},
-		TSFunction = { fg = p.blue2 },
+		TSFunction = { link = 'Function' },
 		TSInclude = { fg = p.teal1 },
-		-- TSKeyword = { fg = p.teal1 },
-		-- TSKeywordFunction = { fg = p.blue3 },
+		TSKeyword = { fg = p.teal1 },
+		-- TSKeywordFunction = { fg = p.teal1 },
 		-- TSKeywordOperator = { fg = p.yellow },
 		-- TSLabel = { fg = p.blue3 },
 		-- TSLiteral = {},
-		TSMethod = { fg = p.text },
+		TSMethod = { fg = p.white },
 		-- TSNamespace = {},
 		-- TSNone = {},
 		-- TSNumber = { link = 'Number' },
 		TSOperator = { link = 'Operator' },
 		TSParameter = { fg = p.text },
 		-- TSParameterReference = {},
-		TSProperty = { fg = p.text },
+		TSProperty = { fg = p.blue2 },
 		TSPunctBracket = { fg = groups.punctuation },
 		TSPunctDelimiter = { fg = groups.punctuation },
 		TSPunctSpecial = { fg = groups.punctuation },
@@ -234,20 +234,20 @@ function M.get(config)
 		-- TSStringRegex = {},
 		-- TSStringSpecial = { fg = p.teal1 },
 		-- TSSymbol = {},
-		TSTag = { fg = p.teal1 },
-		TSTagDelimiter = { fg = p.text },
-		TSTagAttribute = { fg = p.blue2, style = 'italic' },
+		TSTag = { link = 'TSConstructor'},
+		TSTagDelimiter = { fg = p.blueGray2 },
+		TSTagAttribute = { fg = p.blue3, style = 'italic' },
 		TSText = { fg = p.text },
 		-- TSTitle = { fg = groups.headings.h1, style = 'bold' },
 		TSType = { link = 'Type' },
-		TSTypeBuiltin = { fg = p.blueGray1},
+		TSTypeBuiltin = { link = 'Type' },
 		TSURI = { fg = groups.link },
 		-- TSUnderline = {},
 
 		-- tsx/jsx
 		typescriptVariable = { fg = p.blue2 },
 		typescriptExport = { fg = p.teal1 },
-		typescriptVariableDeclaration = { fg = p.blue2 },
+		typescriptConstraint = { fg = p.teal1 },
 		typescriptBlock = { fg = p.text },
 		typescriptIdentifierName = { fg = p.blueGray2 },
 		typescriptTSInclude = { fg = p.teal1 },
