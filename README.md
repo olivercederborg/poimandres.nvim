@@ -8,9 +8,9 @@ All variants of the theme will be available for use.
 
 Plugin support will be added as I personally need it, or when it is requested.
 
-## Screenshots
+## Screenshots!
 
-![Poimandres Base Theme](https://user-images.githubusercontent.com/47901349/180445055-92480553-0652-4155-8d41-835fec27245b.png)
+![Poimandres Base Theme](https://user-images.githubusercontent.com/47901349/180630895-0f4c894e-ebad-482a-8884-bdc71e53e4de.png)
 
 ## Installation
 
