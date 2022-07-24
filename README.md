@@ -8,11 +8,15 @@ All variants of the theme will be available for use.
 
 Plugin support will be added as I personally need it, or when it is requested.
 
-## Screenshots!
+## 📸 Screenshots:
 
-![Poimandres Base Theme](https://user-images.githubusercontent.com/47901349/180630895-0f4c894e-ebad-482a-8884-bdc71e53e4de.png)
+### Lua
+![Poimandres Lua](https://user-images.githubusercontent.com/47901349/180630938-34f3359d-f894-4bbf-a866-4db5959a58a6.png)
 
-## Installation
+### TypeScript
+![Poimandres Typescript](https://user-images.githubusercontent.com/47901349/180630895-0f4c894e-ebad-482a-8884-bdc71e53e4de.png)
+
+## ⬇️ Installation
 
 **Packer**: 
 
@@ -20,7 +24,7 @@ Plugin support will be added as I personally need it, or when it is requested.
 use 'olivercederborg/poimandres.nvim'
 ```
 
-## Usage:
+## 🚀 Usage:
 
 **Lua setup**: 
 
@@ -53,7 +57,7 @@ require('lualine').setup {
 }
 ```
 
-## Related
+## 🙌 Related
 
 - [poimandres-theme](https://github.com/drcmda/poimandres-theme): VSCode version
 - [poimandres-alacritty](https://github.com/z0al/poimandres-alacritty): Alacritty version
