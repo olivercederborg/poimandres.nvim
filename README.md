@@ -1,5 +1,3 @@
-*Still under development for closest experience to the original VSCode theme.*
-
 # Poimandres for Neovim
 
 Neovim theme with the palette of [poimandres vscode theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support. 
