@@ -223,7 +223,7 @@ function M.get(config)
 		TSOperator = { link = 'Operator' },
 		TSParameter = { fg = p.text },
 		-- TSParameterReference = {},
-		TSProperty = { fg = p.blue2 },
+		TSProperty = { fg = p.blue3 },
 		TSPunctBracket = { fg = groups.punctuation },
 		TSPunctDelimiter = { fg = groups.punctuation },
 		TSPunctSpecial = { fg = groups.punctuation },
