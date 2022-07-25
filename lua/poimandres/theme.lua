@@ -213,7 +213,7 @@ function M.get(config)
 		TSInclude = { fg = p.teal1 },
 		TSKeyword = { fg = p.teal1 },
 		TSKeywordFunction = { fg = p.teal1 },
-		-- TSKeywordOperator = { fg = p.yellow },
+		TSKeywordOperator = { fg = p.teal1 },
 		TSLabel = { fg = p.blue3 },
 		-- TSLiteral = {},
 		TSMethod = { fg = p.white },
