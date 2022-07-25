@@ -6,43 +6,78 @@ All variants of the theme will be available for use.
 
 Plugin support will be added as I personally need it, or when it is requested.
 
-## 📸 Screenshots:
+![Poimandres Typescript](https://user-images.githubusercontent.com/47901349/180630895-0f4c894e-ebad-482a-8884-bdc71e53e4de.png)
+
+<details>
+<summary>Screenshots</summary>
 
 ### Lua
 ![Poimandres Lua](https://user-images.githubusercontent.com/47901349/180630938-34f3359d-f894-4bbf-a866-4db5959a58a6.png)
 
 ### TypeScript
 ![Poimandres Typescript](https://user-images.githubusercontent.com/47901349/180630895-0f4c894e-ebad-482a-8884-bdc71e53e4de.png)
+</details>
 
-## ⬇️ Installation
+## 📦 Installation
 
-**Packer**: 
+Install with [packer](https://github.com/wbthomason/packer.nvim):
 
 ```lua
-use 'olivercederborg/poimandres.nvim'
+-- Lua
+use { 
+  'olivercederborg/poimandres.nvim',
+  config = function()
+    require('poimandres').setup {
+      -- leave this setup function empty for default config
+      -- or refer to the configuration section
+      -- for configuration options
+    }
+  end
+}
 ```
 
-## 🚀 Usage:
+Install with [vim-plug](https://github.com/junegunn/vim-plug):
+```vim
+" Vim Script
+Plug 'olivercederborg/poimandres.nvim'
 
-**Lua setup**: 
+lua << EOF
+  require('poimandres').setup {
+      " leave this setup function empty for default config
+      " or refer to the configuration section
+      " for configuration options
+    }
+EOF
+```
+
+## 🚀 Usage
+
+**Enable the colorscheme**:
 
 ```lua
--- lua/user/colorscheme.lua
+-- Lua
+vim.cmd('colorscheme poimandres')
+```
 
-local poimandres = require 'poimandres'
+```vim
+" Vim Script
+colorscheme poimandres
+```
 
--- default setup values
-poimandres.setup {
+## ⚙️ Configuration:
+
+**Setup function options**: 
+
+```lua
+{
   bold_vert_split = false,
   dim_nc_background = false,
   disable_background = false,
   disable_float_background = false,
   disable_italics = false,
 }
-
--- remember to set the colorscheme
-vim.cmd('colorscheme poimandres')
 ```
+
 To enable Poimandres for `Lualine`, just set the theme in your Lualine configuration:
 
 ```lua
