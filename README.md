@@ -24,6 +24,7 @@ Install with [packer](https://github.com/wbthomason/packer.nvim):
 
 ```lua
 -- Lua
+
 use { 
   'olivercederborg/poimandres.nvim',
   config = function()
@@ -39,14 +40,15 @@ use {
 Install with [vim-plug](https://github.com/junegunn/vim-plug):
 ```vim
 " Vim Script
+
 Plug 'olivercederborg/poimandres.nvim'
 
 lua << EOF
   require('poimandres').setup {
-      " leave this setup function empty for default config
-      " or refer to the configuration section
-      " for configuration options
-    }
+    " leave this setup function empty for default config
+    " or refer to the configuration section
+    " for configuration options
+  }
 EOF
 ```
 
@@ -56,11 +58,13 @@ EOF
 
 ```lua
 -- Lua
+
 vim.cmd('colorscheme poimandres')
 ```
 
 ```vim
 " Vim Script
+
 colorscheme poimandres
 ```
 
