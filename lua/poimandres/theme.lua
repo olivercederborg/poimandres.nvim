@@ -213,7 +213,7 @@ function M.get(config)
 		TSInclude = { fg = p.teal1 },
 		TSKeyword = { fg = p.teal1 },
 		TSKeywordFunction = { fg = p.teal1 },
-		-- TSKeywordOperator = { fg = p.yellow },
+		TSKeywordOperator = { fg = p.teal1 },
 		TSLabel = { fg = p.blue3 },
 		-- TSLiteral = {},
 		TSMethod = { fg = p.white },
@@ -223,7 +223,7 @@ function M.get(config)
 		TSOperator = { link = 'Operator' },
 		TSParameter = { fg = p.text },
 		-- TSParameterReference = {},
-		TSProperty = { fg = p.blue2 },
+		TSProperty = { fg = p.blue3 },
 		TSPunctBracket = { fg = groups.punctuation },
 		TSPunctDelimiter = { fg = groups.punctuation },
 		TSPunctSpecial = { fg = groups.punctuation },
@@ -342,7 +342,9 @@ function M.get(config)
 		WhichKeyValue = { fg = p.text },
 
 		-- luka-reineke/indent-blankline.nvim
-		IndentBlanklineChar = { fg = p.text },
+		IndentBlanklineChar = { fg = p.background1 },
+		IndentBlanklineContextChar = { fg = p.blueGray3, gui = 'nocombine' },
+		IndentBlanklineContextStart = { sp = p.blueGray3, gui = 'underline' },
 
 		-- hrsh7th/nvim-cmp
 		CmpItemAbbr = { fg = p.blueGray3 },
