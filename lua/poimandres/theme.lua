@@ -342,7 +342,9 @@ function M.get(config)
 		WhichKeyValue = { fg = p.text },
 
 		-- luka-reineke/indent-blankline.nvim
-		IndentBlanklineChar = { fg = p.text },
+		IndentBlanklineChar = { fg = p.background1 },
+		IndentBlanklineContextChar = { fg = p.blueGray3, gui = 'nocombine' },
+		IndentBlanklineContextStart = { sp = p.blueGray3, gui = 'underline' },
 
 		-- hrsh7th/nvim-cmp
 		CmpItemAbbr = { fg = p.blueGray3 },
