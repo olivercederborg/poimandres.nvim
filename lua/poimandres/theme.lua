@@ -347,11 +347,11 @@ function M.get(config)
 		IndentBlanklineContextStart = { sp = p.blueGray3, gui = 'underline' },
 
 		-- hrsh7th/nvim-cmp
-		CmpItemAbbr = { fg = p.blueGray3 },
-		CmpItemAbbrDeprecated = { fg = p.background1, style = 'strikethrough' },
+		CmpItemAbbr = { fg = p.blueGray2 },
+		CmpItemAbbrDeprecated = { fg = p.pink3, style = 'strikethrough' },
 		CmpItemAbbrMatch = { fg = p.text, style = 'bold' },
 		CmpItemAbbrMatchFuzzy = { fg = p.teal1, style = 'bold' },
-		CmpItemKind = { fg = p.yellow },
+		CmpItemKind = { fg = p.blue3 },
 		CmpItemKindClass = { fg = p.yellow },
 		CmpItemKindFunction = { fg = p.blue1 },
 		CmpItemKindInterface = { fg = p.blue2 },
