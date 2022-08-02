@@ -99,12 +99,12 @@ function M.get(config)
     Function = { fg = p.teal1 }, -- function name (also: methods for classes)
 
     Statement = { fg = p.text }, -- (preferred) any statement
-    Conditional = { fg = p.blueGray1 }, --  if, then, else, endif, switch, etc.
-    Repeat = { fg = p.blueGray1 }, --   for, do, while, etc.
+    Conditional = { fg = p.blue3 }, --  if, then, else, endif, switch, etc.
+    Repeat = { fg = p.blue3 }, --   for, do, while, etc.
     Label = { fg = p.text }, --    case, default, etc.
     Operator = { fg = p.blue2 }, -- "sizeof", "+", "*", etc.
     Keyword = { fg = p.blue2 }, --  any other keyword
-    Exception = { fg = p.blueGray1 }, --  try, catch, throw
+    Exception = { fg = p.blue3 }, --  try, catch, throw
 
     PreProc = { fg = p.text }, -- (preferred) generic Preprocessor
     -- Include       = { }, --  preprocessor #include
