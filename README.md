@@ -6,16 +6,20 @@ All variants of the theme will be available for use.
 
 Plugin support will be added as I personally need it, or when it is requested.
 
-![Poimandres Typescript](https://user-images.githubusercontent.com/47901349/180630895-0f4c894e-ebad-482a-8884-bdc71e53e4de.png)
+![Poimandres Golang](https://user-images.githubusercontent.com/47901349/182434263-91489ea7-8e6f-4c2a-b738-6d3f293cd357.png)
+
 
 <details>
 <summary>Screenshots</summary>
 
 ### Lua
-![Poimandres Lua](https://user-images.githubusercontent.com/47901349/180630938-34f3359d-f894-4bbf-a866-4db5959a58a6.png)
+
+![Poimandres Lua](https://user-images.githubusercontent.com/47901349/182434460-3702a751-7cc1-43c6-aa9e-05843ad5489c.png)
 
 ### TypeScript
-![Poimandres Typescript](https://user-images.githubusercontent.com/47901349/180630895-0f4c894e-ebad-482a-8884-bdc71e53e4de.png)
+
+![Poimandres TypeScript](https://user-images.githubusercontent.com/47901349/182434594-0e8b3408-92ec-4056-8907-9a28a94fa08a.png)
+
 </details>
 
 ## 📦 Installation
