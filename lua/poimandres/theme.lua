@@ -88,22 +88,22 @@ function M.get(config)
     -- default,
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Constant = { fg = p.white }, -- (preferred) any constant
-    String = { fg = p.text }, --   a string constant: "this is a string"
-    Character = { fg = p.yellow }, --  a character constant: 'c', '\n'
-    Number = { fg = p.pink2 }, --   a number constant: 234, 0xff
-    Boolean = { fg = p.pink2 }, --  a boolean constant: TRUE, false
-    Float = { fg = p.pink2 }, --    a floating point constant: 2.3e10
+    Constant = { fg = p.text }, -- (preferred) any constant
+    String = { fg = p.teal1 }, --   a string constant: "this is a string"
+    Character = { fg = p.pink3 }, --  a character constant: 'c', '\n'
+    Number = { fg = p.teal1 }, --   a number constant: 234, 0xff
+    Boolean = { fg = p.teal1 }, --  a boolean constant: TRUE, false
+    Float = { fg = p.teal1 }, --    a floating point constant: 2.3e10
 
     Identifier = { fg = p.blueGray1 }, -- (preferred) any variable name
-    Function = { fg = p.blue2 }, -- function name (also: methods for classes)
+    Function = { fg = p.teal1 }, -- function name (also: methods for classes)
 
     Statement = { fg = p.text }, -- (preferred) any statement
     Conditional = { fg = p.blueGray1 }, --  if, then, else, endif, switch, etc.
     Repeat = { fg = p.blueGray1 }, --   for, do, while, etc.
     Label = { fg = p.text }, --    case, default, etc.
-    Operator = { fg = p.blue3 }, -- "sizeof", "+", "*", etc.
-    Keyword = { fg = p.blue3 }, --  any other keyword
+    Operator = { fg = p.blue2 }, -- "sizeof", "+", "*", etc.
+    Keyword = { fg = p.blue2 }, --  any other keyword
     Exception = { fg = p.blueGray1 }, --  try, catch, throw
 
     PreProc = { fg = p.text }, -- (preferred) generic Preprocessor
@@ -119,12 +119,12 @@ function M.get(config)
 
     Special = { fg = p.blueGray2 }, -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
-    Tag = { fg = p.teal1 }, --    you can use CTRL-] on this
-    Delimiter = { fg = p.blueGray2 }, --  character that needs attention
+    Tag = { fg = p.text }, --    you can use CTRL-] on this
+    Delimiter = { fg = p.text }, --  character that needs attention
     SpecialComment = { fg = p.blueGray1 }, -- special things inside a comment
     -- Debug         = { }, --    debugging statements
 
-    Comment = { fg = p.blueGray3 }, -- (preferred) any special symbol
+    Comment = { fg = p.blueGray1 }, -- (preferred) any special symbol
 
     Underlined = { style = 'underline' }, -- (preferred) text that stands out, HTML links
     Bold = { style = 'bold' },
@@ -187,18 +187,18 @@ function M.get(config)
     DiagnosticVirtualTextInfo = { fg = groups.info },
     DiagnosticVirtualTextWarn = { fg = groups.warn },
 
-    TSVariable = { fg = p.white },
+    TSVariable = { fg = p.text },
     -- TSAttribute = {},
     -- TSKeywordReturn = { fg = p.teal2 },
     TSBoolean = { link = 'Boolean' },
     -- TSCharacter = { link = 'Character' },
     TSComment = { link = 'Comment' },
     -- TSConditional = { link = 'Conditional' },
-    TSVariableBuiltin = { fg = p.pink2 },
-    TSConstBuiltin = { fg = p.text },
+    TSVariableBuiltin = { fg = p.blue2 },
+    TSConstBuiltin = { fg = p.blue2 },
     -- TSConstMacro = {},
     -- TSConstant = { fg = p.text },
-    TSConstructor = { fg = p.white },
+    TSConstructor = { fg = p.teal1 },
     -- TSEmphasis = {},
     -- TSError = {},
     -- TSException = {},
@@ -207,33 +207,33 @@ function M.get(config)
     TSFuncBuiltin = { fg = p.blue2 },
     -- TSFuncMacro = {},
     TSFunction = { link = 'Function' },
-    TSInclude = { fg = p.teal1 },
-    TSKeyword = { fg = p.teal1 },
-    TSKeywordFunction = { fg = p.teal1 },
+    TSInclude = { fg = p.blue2 },
+    TSKeyword = { fg = p.blue2 },
+    TSKeywordFunction = { fg = p.blue2 },
     TSKeywordOperator = { fg = p.teal1 },
     TSLabel = { fg = p.blue3 },
     -- TSLiteral = {},
-    TSMethod = { fg = p.white },
+    TSMethod = { fg = p.teal1 },
     -- TSNamespace = {},
     -- TSNone = {},
     -- TSNumber = { link = 'Number' },
     TSOperator = { link = 'Operator' },
     TSParameter = { fg = p.text },
     -- TSParameterReference = {},
-    TSProperty = { fg = p.blue3 },
+    TSProperty = { fg = p.text },
     TSPunctBracket = { fg = groups.punctuation },
     TSPunctDelimiter = { fg = groups.punctuation },
     TSPunctSpecial = { fg = groups.punctuation },
     -- TSRepeat = {},
     -- TSStrike = {},
     TSString = { link = 'String' },
-    TSStringEscape = { fg = p.yellow },
+    TSStringEscape = { fg = p.pink3 },
     -- TSStringRegex = {},
     -- TSStringSpecial = { fg = p.teal1 },
     -- TSSymbol = {},
-    TSTag = { link = 'TSConstructor' },
-    TSTagDelimiter = { fg = p.blueGray2 },
-    TSTagAttribute = { fg = p.blue3, style = styles.italic },
+    TSTag = { fg = p.text },
+    TSTagDelimiter = { fg = p.text },
+    TSTagAttribute = { fg = p.blue2, style = styles.italic },
     TSText = { fg = p.text },
     TSTitle = { fg = groups.headings.h1, style = 'bold' },
     TSType = { link = 'Type' },
