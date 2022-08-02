@@ -1,4 +1,14 @@
-# Poimandres for Neovim
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/47901349/182481495-06f11e94-8d8a-4580-b869-56b6defae182.png" width="100px">      
+  <h1>poimandres.nvim</h1>
+</div>
+
+<p align="center">
+  <a href="#">
+    <img alt="Made with Lua" src="https://img.shields.io/badge/Made%20with%20Lua-00359F.svg?style=for-the-badge&logo=lua" style="vertical-align:center" />
+  </a>
+</p>
 
 Neovim theme with the palette of [poimandres vscode theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support. 
 
