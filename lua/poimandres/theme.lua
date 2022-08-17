@@ -120,7 +120,7 @@ function M.get(config)
     Special = { fg = p.blueGray2 }, -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
     Tag = { fg = p.text }, --    you can use CTRL-] on this
-    Delimiter = { fg = p.text }, --  character that needs attention
+    Delimiter = { fg = p.blueGray1 }, --  character that needs attention
     SpecialComment = { fg = p.blueGray1 }, -- special things inside a comment
     -- Debug         = { }, --    debugging statements
 
@@ -254,6 +254,9 @@ function M.get(config)
     typescriptTypeCast = { fg = p.blueGray2 },
     typescriptParenExp = { fg = p.blueGray2 },
     typescriptObjectType = { fg = p.blueGray1 },
+
+    -- lua
+    luaTSConstructor = { fg = p.blueGray1 },
 
     -- vim.lsp.buf.document_highlight()
     LspReferenceText = { bg = p.blue2 },
