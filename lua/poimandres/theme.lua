@@ -66,7 +66,7 @@ function M.get(config)
     SpellCap = { sp = p.blue1, style = 'undercurl' },
     SpellLocal = { sp = p.yellow, style = 'undercurl' },
     SpellRare = { sp = p.blue1, style = 'undercurl' },
-    SignColumn = { fg = p.text, bg = styles.background },
+    SignColumn = { fg = p.text, bg = p.none },
     StatusLine = { fg = p.blue3, bg = styles.float_background },
     StatusLineNC = { fg = p.blue3, bg = styles.background },
     StatusLineTerm = { link = 'StatusLine' },
