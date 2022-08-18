@@ -14,8 +14,6 @@ Neovim theme with the palette of [poimandres vscode theme](https://github.com/dr
 
 All variants of the theme will be available for use.
 
-Plugin support will be added as I personally need it, or when it is requested.
-
 ![Poimandres Golang](https://user-images.githubusercontent.com/47901349/182434263-91489ea7-8e6f-4c2a-b738-6d3f293cd357.png)
 
 
@@ -42,6 +40,8 @@ Plugin support will be added as I personally need it, or when it is requested.
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [Lualine](https://github.com/hoob3rt/lualine.nvim)
+
+_More plugins will be supported as I personally need it, or when it is requested._
 
 ## 📦 Installation
 
@@ -99,11 +99,11 @@ colorscheme poimandres
 
 ```lua
 {
-  bold_vert_split = false,
-  dim_nc_background = false,
-  disable_background = false,
-  disable_float_background = false,
-  disable_italics = false,
+  bold_vert_split = false, -- use bold vertical separators
+  dim_nc_background = false, -- dim 'non-current' windows
+  disable_background = false, -- disable background
+  disable_float_background = false, -- disable background for floats
+  disable_italics = false, -- disable italics
 }
 ```
 
