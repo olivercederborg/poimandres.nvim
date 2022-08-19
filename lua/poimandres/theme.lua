@@ -13,7 +13,8 @@ function M.get(config)
     background = (config.disable_background and p.none) or groups.background,
     float_background = (config.disable_float_background and p.none) or groups.panel,
   }
-  styles.nc_background = (config.dim_nc_background and groups.panel) or styles.background
+  styles.nc_background = (config.dim_nc_background and not config.disable_background and groups.panel)
+    or styles.background
 
   theme = {
     ColorColumn = { bg = p.blueGray1 },
@@ -66,7 +67,7 @@ function M.get(config)
     SpellCap = { sp = p.blue1, style = 'undercurl' },
     SpellLocal = { sp = p.yellow, style = 'undercurl' },
     SpellRare = { sp = p.blue1, style = 'undercurl' },
-    SignColumn = { fg = p.text, bg = styles.background },
+    SignColumn = { fg = p.text, bg = p.none },
     StatusLine = { fg = p.blue3, bg = styles.float_background },
     StatusLineNC = { fg = p.blue3, bg = styles.background },
     StatusLineTerm = { link = 'StatusLine' },
