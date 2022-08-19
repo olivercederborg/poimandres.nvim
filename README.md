@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="https://user-images.githubusercontent.com/47901349/182481495-06f11e94-8d8a-4580-b869-56b6defae182.png" width="100px">      
   <h1>poimandres.nvim</h1>
@@ -14,11 +13,10 @@ Neovim theme with the palette of [poimandres vscode theme](https://github.com/dr
 
 All variants of the theme will be available for use.
 
-![Poimandres Golang](https://user-images.githubusercontent.com/47901349/182434263-91489ea7-8e6f-4c2a-b738-6d3f293cd357.png)
-
+![Poimandres Golang](https://user-images.githubusercontent.com/47901349/185516934-6db42b76-bd96-4b3f-8c20-058827b6c70f.png)
 
 <details>
-<summary>Screenshots</summary>
+<summary>More screenshots</summary>
 
 ### Lua
 
@@ -27,6 +25,10 @@ All variants of the theme will be available for use.
 ### TypeScript
 
 ![Poimandres TypeScript](https://user-images.githubusercontent.com/47901349/182434594-0e8b3408-92ec-4056-8907-9a28a94fa08a.png)
+
+### Golang
+
+![Poimandres Golang](https://user-images.githubusercontent.com/47901349/182434263-91489ea7-8e6f-4c2a-b738-6d3f293cd357.png)
 
 </details>
 
