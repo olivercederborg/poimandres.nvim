@@ -9,7 +9,7 @@
   </a>
 </p>
 
-Neovim theme with the palette of [poimandres vscode theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support. 
+Neovim theme based on the [poimandres vscode theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support. 
 
 All variants of the theme will be available for use.
 
