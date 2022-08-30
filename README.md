@@ -121,6 +121,12 @@ require('lualine').setup {
 }
 ```
 
+## Extra
+
+There's [extra](https://github.com/olivercederborg/poimandres.nvim/tree/main/extra) configuration files for the following tools:
+
+- [WezTerm](https://wezfurlong.org/wezterm/index.html)
+
 ## 🙌 Related
 
 - [poimandres-theme](https://github.com/drcmda/poimandres-theme): VSCode version
