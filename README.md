@@ -125,7 +125,7 @@ require('lualine').setup {
 
 There's [extra](https://github.com/olivercederborg/poimandres.nvim/tree/main/extra) configuration files for the following tools:
 
-- [WezTerm](https://wezfurlong.org/wezterm/index.html)
+- [WezTerm](https://wezfurlong.org/wezterm/index.html) - [theme documentation](https://github.com/olivercederborg/poimandres.nvim/blob/main/extra/wezterm/README.md)
 
 ## 🙌 Related
 
