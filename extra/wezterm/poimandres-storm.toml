@@ -1,0 +1,84 @@
+[metadata]
+name = 'Poimandres Storm'
+author = 'Oliver Cederborg'
+origin_url = "https://github.com/olivercederborg/poimandres-wezterm"
+
+[colors]
+ansi = [
+    '#1B1E28',
+    '#D0679D',
+    '#5DE4C7',
+    '#FFFAC2',
+    '#89DDFF',
+    '#FCC5E9',
+    '#89DDFF',
+    '#FFFFFF',
+]
+brights = [
+    '#506477',
+    '#D0679D',
+    '#5DE4C7',
+    '#FFFAC2',
+    '#ADD7FF',
+    '#FCC5E9',
+    '#ADD7FF',
+    '#FFFFFF',
+]
+background = '#252B37'
+foreground = '#E4F0FB'
+compose_cursor = '#FCC5E9'
+cursor_bg = '#7390AA'
+cursor_border = '#7390AA'
+cursor_fg = '#252B37'
+scrollbar_thumb = '#404350'
+selection_bg = '#506477'
+selection_fg = '#E4F0FB'
+split = '#252B37'
+visual_bell = '#506477'
+
+[colors.indexed]
+16 = '#5DE4C7'
+17 = '#D0679D'
+
+[colors.tab_bar]
+background = '#1B1E28'
+
+[colors.tab_bar.active_tab]
+bg_color = '#1B1E28'
+fg_color = '#E4F0FB'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#1B1E28'
+fg_color = '#506477'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#1B1E28'
+fg_color = '#868CAD'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#1B1E28'
+fg_color = '#506477'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#1B1E28'
+fg_color = '#868CAD'
+intensity = 'Normal'
+italic = true
+strikethrough = false
+underline = 'None'
