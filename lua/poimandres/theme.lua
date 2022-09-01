@@ -114,7 +114,7 @@ function M.get(config)
     -- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
 
     Type = { fg = p.blueGray1 }, -- (preferred) int, long, char, etc.
-    Structure = { fg = p.blueGray1 }, --  struct, union, enum, etc.
+    --[[ Structure = { fg = p.blueGray1 }, --  struct, union, enum, etc. ]]
     -- StorageClass  = { }, -- static, register, volatile, etc.
     -- Typedef = { fg = p.blueGray1 }, --  A typedef
 
@@ -258,6 +258,16 @@ function M.get(config)
 
     -- lua
     luaTSConstructor = { fg = p.blueGray1 },
+
+    -- css
+    cssTSFunction = { fg = p.blueGray1 },
+    cssTSProperty = { fg = p.blue2 },
+    cssTSType = { fg = p.teal1 },
+    cssTSKeyword = { fg = p.blueGray1 },
+    cssClassName = { fg = p.teal2, style = styles.italic },
+    cssPseudoClass = { fg = p.blue3, style = styles.italic },
+    cssDefinition = { fg = p.blue2 },
+    cssTSError = { link = 'cssClassName' },
 
     -- vim.lsp.buf.document_highlight()
     LspReferenceText = { bg = p.blue2 },
