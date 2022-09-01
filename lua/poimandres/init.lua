@@ -1,3 +1,4 @@
+require 'poimandres.highlights'
 local utils = require 'poimandres.utils'
 
 local M = {}
