@@ -100,7 +100,7 @@ colorscheme poimandres
 **Setup function options**: 
 
 ```lua
-{
+require('poimandres').setup {
   bold_vert_split = false, -- use bold vertical separators
   dim_nc_background = false, -- dim 'non-current' window backgrounds
   disable_background = false, -- disable background
