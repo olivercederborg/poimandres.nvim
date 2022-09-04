@@ -1,6 +1,6 @@
 # WezTerm Theme
 
-**_⚠️ Waiting to be included in WezTerm build ⚠️_**
+Poimandres is now synced into [WezTerm](https://wezfurlong.org/wezterm/) and just requires version [`20220903-194523-3bb1ed61`](https://wezfurlong.org/wezterm/changelog.html?highlight=change#20220903-194523-3bb1ed61) or later to be used.
 
 ## Screenshots
 
