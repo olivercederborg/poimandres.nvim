@@ -1,0 +1,4 @@
+[
+  (nil)
+  (false)
+] @constant.falsy
