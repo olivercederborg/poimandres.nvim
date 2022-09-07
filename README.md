@@ -128,6 +128,10 @@ There's [extra](https://github.com/olivercederborg/poimandres.nvim/tree/main/ext
 
 - [WezTerm](https://wezfurlong.org/wezterm/index.html) - [theme documentation](https://github.com/olivercederborg/poimandres.nvim/blob/main/extra/wezterm/README.md)
 
+## Contributions
+
+Feel free to help improving the color scheme by opening issues and PRs with features, fixes or changes.
+
 ## 🙌 Related
 
 - [poimandres-theme](https://github.com/drcmda/poimandres-theme): VSCode version
