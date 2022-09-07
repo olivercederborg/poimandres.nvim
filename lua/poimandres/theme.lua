@@ -389,6 +389,13 @@ function M.get(config)
     TelescopeSelectionCaret = { fg = p.pink2, bg = p.blueGray1 },
     TelescopeTitle = { fg = p.blueGray2 },
 
+    -- phaazon/hop.nvim
+    HopNextKey = { fg = p.blue1 },
+    HopNextKey1 = { fg = p.teal1 },
+    HopNextKey2 = { fg = p.teal2 },
+    HopUnmatched = { fg = p.blueGray3 },
+    HopCursor = { fg = p.blue3 },
+
     -- rcarriga/nvim-notify
     NotifyINFOBorder = { fg = p.teal1 },
     NotifyINFOTitle = { link = 'NotifyINFOBorder' },
@@ -423,6 +430,7 @@ function M.get(config)
   vim.g.terminal_color_14 = p.blue2 -- bright cyan
   vim.g.terminal_color_7 = p.white -- white
   vim.g.terminal_color_15 = p.white -- bright white
+
   return theme
 end
 
