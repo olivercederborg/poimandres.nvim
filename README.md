@@ -40,8 +40,9 @@ All variants of the theme will be available for use.
 - [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
-- [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [Lualine](https://github.com/hoob3rt/lualine.nvim)
+- [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [Hop](https://github.com/phaazon/hop.nvim)
 
 _More plugins will be supported as I personally need it, or when it is requested._
 
