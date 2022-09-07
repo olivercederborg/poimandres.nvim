@@ -14,7 +14,7 @@ function M.get(config)
     float_background = (config.disable_float_background and p.none) or groups.panel,
   }
   styles.nc_background = (config.dim_nc_background and not config.disable_background and groups.panel)
-    or styles.background
+      or styles.background
 
   theme = {
     ColorColumn = { bg = p.blueGray1 },
@@ -151,10 +151,12 @@ function M.get(config)
     mkdLink = { fg = p.blue1, style = 'underline' },
 
     markdownHeadingDelimiter = { fg = p.blue4, style = 'bold' },
-    markdownCode = { fg = p.teal2 },
+    markdownCode = { fg = p.blueGray1 },
     markdownCodeBlock = { fg = p.teal2 },
-    markdownH1 = { fg = p.teal1, style = 'bold' },
-    markdownH2 = { fg = p.teal1, style = 'bold' },
+    markdownH1 = { fg = p.blue2, style = 'bold' },
+    markdownH2 = { fg = p.blue2, style = 'bold' },
+    markdownH3 = { fg = p.blue2, style = 'bold' },
+    markdownH4 = { fg = p.blue2, style = 'bold' },
     markdownLinkText = { fg = p.blue1, style = 'underline' },
 
     debugPC = { bg = p.background1 }, -- used for highlighting the current line in terminal-debug
