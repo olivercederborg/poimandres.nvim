@@ -1,4 +1,4 @@
-require 'poimandres.highlights'
+--[[ require 'poimandres.highlights' ]]
 local utils = require 'poimandres.utils'
 
 local M = {}
