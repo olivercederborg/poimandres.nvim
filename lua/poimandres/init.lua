@@ -17,7 +17,7 @@ local config = {
     border = 'background3',
     comment = 'blueGray3',
     link = 'blue3',
-    punctuation = 'blueGray2',
+    punctuation = 'blue3',
 
     error = 'pink3',
     hint = 'blue1',
