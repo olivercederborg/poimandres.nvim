@@ -14,7 +14,7 @@ function M.get(config)
     float_background = (config.disable_float_background and p.none) or groups.panel,
   }
   styles.nc_background = (config.dim_nc_background and not config.disable_background and groups.panel)
-      or styles.background
+    or styles.background
 
   theme = {
     ColorColumn = { bg = p.blueGray1 },
@@ -80,7 +80,7 @@ function M.get(config)
     Visual = { fg = p.text, bg = p.blueGray3 },
     -- VisualNOS = {},
     WarningMsg = { fg = p.yellow },
-    -- Whitespace = {},
+    Whitespace = { fg = p.blueGray3 },
     WildMenu = { link = 'IncSearch' },
 
     -- These groups are not listed as default vim groups,
@@ -97,18 +97,18 @@ function M.get(config)
     Float = { fg = p.teal1 }, --    a floating point constant: 2.3e10
 
     Identifier = { fg = p.blueGray1 }, -- (preferred) any variable name
-    Function = { fg = p.teal1 }, -- function name (also: methods for classes)
+    Function = { fg = p.blue2 }, -- function name (also: methods for classes)
 
     Statement = { fg = p.text }, -- (preferred) any statement
-    Conditional = { fg = p.blue3 }, --  if, then, else, endif, switch, etc.
+    Conditional = { fg = p.blueGray1 }, --  if, then, else, endif, switch, etc.
     Repeat = { fg = p.blue3 }, --   for, do, while, etc.
     Label = { fg = p.text }, --    case, default, etc.
     Operator = { fg = p.blue2 }, -- "sizeof", "+", "*", etc.
-    Keyword = { fg = p.blue2 }, --  any other keyword
+    Keyword = { fg = p.blue3 }, --  any other keyword
     Exception = { fg = p.blue3 }, --  try, catch, throw
 
     PreProc = { fg = p.text }, -- (preferred) generic Preprocessor
-    -- Include       = { }, --  preprocessor #include
+    Include = { fg = p.blueGray1 }, --  preprocessor #include
     -- Define        = { }, --   preprocessor #define
     -- Macro         = { }, --    same as Define
     -- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
@@ -190,57 +190,60 @@ function M.get(config)
     DiagnosticVirtualTextInfo = { fg = groups.info },
     DiagnosticVirtualTextWarn = { fg = groups.warn },
 
-    TSVariable = { fg = p.text },
+    -- Treesitter
+    ['@variable'] = { fg = p.text },
     -- TSAttribute = {},
     -- TSKeywordReturn = { fg = p.teal2 },
-    TSBoolean = { link = 'Boolean' },
+    ['@boolean'] = { link = 'Boolean' },
     -- TSCharacter = { link = 'Character' },
-    TSComment = { link = 'Comment' },
+    ['@comment'] = { link = 'Comment' },
     -- TSConditional = { link = 'Conditional' },
-    TSVariableBuiltin = { fg = p.blue2 },
-    TSConstBuiltin = { fg = p.blue2 },
+    ['@variable.builtin'] = { fg = p.blue2 },
+    ['@constant.builtin'] = { fg = p.blue2 },
     -- TSConstMacro = {},
     -- TSConstant = { fg = p.text },
-    TSConstructor = { fg = p.teal1 },
+    ['@constructor'] = { fg = p.teal1 },
     -- TSEmphasis = {},
     -- TSError = {},
     -- TSException = {},
-    TSField = { fg = p.text },
+    ['field'] = { fg = p.text },
     -- TSFloat = {},
-    TSFuncBuiltin = { fg = p.blue2 },
+    ['@function.builtin'] = { fg = p.blue2 },
     -- TSFuncMacro = {},
-    TSFunction = { link = 'Function' },
+    ['@function'] = { link = 'Function' },
+    ['@function.call'] = { fg = p.text },
     TSInclude = { fg = p.blue2 },
-    TSKeyword = { fg = p.blue2 },
-    TSKeywordFunction = { fg = p.blue2 },
-    TSKeywordOperator = { fg = p.teal1 },
-    TSLabel = { fg = p.blue3 },
+    ['@keyword'] = { link = 'Keyword' },
+    ['@keyword.return'] = { fg = p.teal2 },
+    ['@keyword.function'] = { fg = p.blue2 },
+    ['@keyword.operator'] = { fg = p.teal1 },
+    ['@label'] = { fg = p.blue3 },
     -- TSLiteral = {},
-    TSMethod = { fg = p.teal1 },
+    ['@method'] = { fg = p.teal1 },
     -- TSNamespace = {},
     -- TSNone = {},
     -- TSNumber = { link = 'Number' },
-    TSOperator = { link = 'Operator' },
-    TSParameter = { fg = p.text },
+    ['@operator'] = { link = 'Operator' },
+    ['@parameter'] = { fg = p.text },
     -- TSParameterReference = {},
-    TSProperty = { fg = p.text },
-    TSPunctBracket = { fg = groups.punctuation },
-    TSPunctDelimiter = { fg = groups.punctuation },
-    TSPunctSpecial = { fg = groups.punctuation },
+    ['@property'] = { fg = p.blue2 },
+    ['@punctuation.delimiter'] = { fg = groups.punctuation },
+    ['@punctuation.special'] = { fg = groups.punctuation },
+    ['@punctuation.bracket'] = { fg = p.text },
     -- TSRepeat = {},
     -- TSStrike = {},
-    TSString = { link = 'String' },
-    TSStringEscape = { fg = p.pink3 },
+    ['@string'] = { link = 'String' },
+    ['@string.escape'] = { fg = p.pink3 },
     -- TSStringRegex = {},
     -- TSStringSpecial = { fg = p.teal1 },
     -- TSSymbol = {},
-    TSTag = { fg = p.text },
-    TSTagDelimiter = { fg = p.text },
-    TSTagAttribute = { fg = p.blue2, style = styles.italic },
-    TSText = { fg = p.text },
-    TSTitle = { fg = groups.headings.h1, style = 'bold' },
-    TSType = { link = 'Type' },
-    TSTypeBuiltin = { link = 'Type' },
+    ['@tag'] = { fg = p.text },
+    ['@tag.delimiter'] = { fg = p.text },
+    ['@tag.attribute'] = { fg = p.blue3, style = styles.italic },
+    ['@text'] = { fg = p.text },
+    ['@title'] = { fg = groups.headings.h1, style = 'bold' },
+    ['@type'] = { link = 'Type' },
+    ['@type.builtin'] = { link = 'Type' },
     TSURI = { fg = groups.link },
     -- TSUnderline = {},
 
@@ -356,8 +359,10 @@ function M.get(config)
 
     -- luka-reineke/indent-blankline.nvim
     IndentBlanklineChar = { fg = p.background1 },
-    IndentBlanklineContextChar = { fg = p.blueGray3, gui = 'nocombine' },
-    IndentBlanklineContextStart = { sp = p.blueGray3, gui = 'underline' },
+    IndentBlanklineContextChar = { fg = p.yellow, gui = 'nocombine' },
+    IndentBlanklineContextStart = { fg = p.yellow, gui = 'underline' },
+    IndentBlanklineSpaceChar = { link = 'Whitespace' },
+    IndentBlanklineSpaceCharBlankline = { link = 'Whitespace' },
 
     -- hrsh7th/nvim-cmp
     CmpItemAbbr = { fg = p.blueGray2 },
