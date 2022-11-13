@@ -50,6 +50,8 @@ _More plugins will be supported as I personally need it, or when it is requested
 
 Install with [packer](https://github.com/wbthomason/packer.nvim):
 
+_**IMPORTANT!** The `setup` function has to be invoked before the colorscheme is set!_
+
 ```lua
 -- Lua
 
