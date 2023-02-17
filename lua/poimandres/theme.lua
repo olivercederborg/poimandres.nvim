@@ -200,6 +200,7 @@ function M.get(config)
     -- TSConditional = { link = 'Conditional' },
     ['@variable.builtin'] = { fg = p.blue2 },
     ['@constant.builtin'] = { fg = p.blue2 },
+    ['@constant.falsy'] = { fg = p.pink3 },
     -- TSConstMacro = {},
     -- TSConstant = { fg = p.text },
     ['@constructor'] = { fg = p.teal1 },
@@ -211,7 +212,7 @@ function M.get(config)
     ['@function.builtin'] = { fg = p.blue2 },
     -- TSFuncMacro = {},
     ['@function'] = { link = 'Function' },
-    ['@function.call'] = { fg = p.text },
+    ['@function.call'] = { fg = p.blueGray1 },
     TSInclude = { fg = p.blue2 },
     ['@keyword'] = { link = 'Keyword' },
     ['@keyword.return'] = { fg = p.teal2 },
@@ -247,7 +248,15 @@ function M.get(config)
     TSURI = { fg = groups.link },
     -- TSUnderline = {},
 
-    -- tsx/jsx
+    -- tsx
+    ['@keyword.export.tsx'] = { fg = p.teal1 },
+    ['@keyword.import.tsx'] = { fg = p.teal1 },
+    ['@import.identifier.tsx'] = { fg = p.blue2 },
+
+    -- typescript
+    ['@keyword.export.typescript'] = { fg = p.teal1 },
+    ['@keyword.import.typescript'] = { fg = p.teal1 },
+    ['@import.identifier.typescript'] = { fg = p.blue2 },
     typescriptVariable = { fg = p.blue2 },
     typescriptExport = { fg = p.teal1 },
     typescriptDefault = { fg = p.teal1 },
