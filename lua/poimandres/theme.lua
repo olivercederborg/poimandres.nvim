@@ -428,6 +428,74 @@ function M.get(config)
     NotifyERRORBorder = { fg = p.pink3 },
     NotifyERRORTitle = { link = 'NotifyERRORBorder' },
     NotifyERRORIcon = { link = 'NotifyERRORBorder' },
+
+    -- glepnir/lspsaga.nvim
+    TitleString = { fg = p.blue2 },
+    TitleIcon = { fg = p.blue2 },
+    SagaBorder = { bg = p.background2, fg = p.blueGray2 },
+    SagaNormal = { bg = p.background2 },
+    SagaExpand = { fg = p.teal2 },
+    SagaCollapse = { fg = p.teal2 },
+    SagaBeacon = { bg = p.yellow },
+    -- code action
+    ActionPreviewNormal = { link = 'SagaNormal' },
+    ActionPreviewBorder = { link = 'SagaBorder' },
+    ActionPreviewTitle = { fg = p.blueGray2, bg = p.background2 },
+    CodeActionNormal = { link = 'SagaNormal' },
+    CodeActionBorder = { link = 'SagaBorder' },
+    CodeActionText = { fg = p.yellow },
+    CodeActionNumber = { fg = p.blue3 },
+    -- finder
+    FinderSelection = { fg = p.blueGray2, bold = true },
+    FinderFileName = { fg = p.white },
+    FinderCount = { link = 'Label' },
+    FinderIcon = { fg = p.yellow },
+    FinderType = { fg = p.teal1 },
+    --finder spinner
+    FinderSpinnerTitle = { fg = p.pink3, bold = true },
+    FinderSpinner = { fg = p.pink3, bold = true },
+    FinderPreviewSearch = { link = 'Search' },
+    FinderVirtText = { fg = p.blue1 },
+    FinderNormal = { link = 'SagaNormal' },
+    FinderBorder = { link = 'SagaBorder' },
+    FinderPreviewBorder = { link = 'SagaBorder' },
+    -- definition
+    DefinitionBorder = { link = 'SagaBorder' },
+    DefinitionNormal = { link = 'SagaNormal' },
+    DefinitionSearch = { link = 'Search' },
+    -- hover
+    HoverNormal = { link = 'SagaNormal' },
+    HoverBorder = { link = 'SagaBorder' },
+    -- rename
+    RenameBorder = { link = 'SagaBorder' },
+    RenameNormal = { fg = p.white, p.background2 },
+    RenameMatch = { link = 'Search' },
+    -- diagnostic
+    DiagnosticBorder = { link = 'SagaBorder' },
+    DiagnosticSource = { fg = p.blueGray2 },
+    DiagnosticNormal = { link = 'SagaNormal' },
+    DiagnosticErrorBorder = { link = 'DiagnosticError' },
+    DiagnosticWarnBorder = { link = 'DiagnosticWarn' },
+    DiagnosticHintBorder = { link = 'DiagnosticHint' },
+    DiagnosticInfoBorder = { link = 'DiagnosticInfo' },
+    DiagnosticPos = { fg = p.blueGray2 },
+    DiagnosticWord = { fg = p.white },
+    -- Call Hierachry
+    CallHierarchyNormal = { link = 'SagaNormal' },
+    CallHierarchyBorder = { link = 'SagaBorder' },
+    CallHierarchyIcon = { fg = p.pink2 },
+    CallHierarchyTitle = { fg = p.pink2 },
+    -- lightbulb
+    LspSagaLightBulb = { link = 'DiagnosticSignHint' },
+    -- shadow
+    SagaShadow = { bg = p.background3 },
+    -- Outline
+    OutlineIndent = { fg = p.blue2 },
+    OutlinePreviewBorder = { link = 'SagaNormal' },
+    OutlinePreviewNormal = { link = 'SagaBorder' },
+    -- Float term
+    TerminalBorder = { link = 'SagaBorder' },
+    TerminalNormal = { link = 'SagaNormal' },
   }
 
   vim.g.terminal_color_0 = p.background3 -- black
