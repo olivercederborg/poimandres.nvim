@@ -238,7 +238,7 @@ function M.get(config)
     -- TSStringRegex = {},
     -- TSStringSpecial = { fg = p.teal1 },
     -- TSSymbol = {},
-    ['@tag'] = { fg = p.text },
+    ['@tag'] = { fg = p.teal1 },
     ['@tag.delimiter'] = { fg = p.text },
     ['@tag.attribute'] = { fg = p.blue3, style = styles.italic },
     ['@text'] = { fg = p.text },
