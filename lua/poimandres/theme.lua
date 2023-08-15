@@ -417,6 +417,13 @@ function M.get(config)
     HopUnmatched = { fg = p.blueGray3 },
     HopCursor = { fg = p.blue3 },
 
+    -- ggandor/leap.nvim
+    LeapMatch = { fg = p.background2, bg = p.pink2 },
+    LeapLabelPrimary = { fg = p.background2, bg = p.teal1 },
+    LeapLabelSecondary = { fg = p.background2, bg = p.blue1 },
+    LeapLabelSelected = { fg = p.background2, bg = p.yellow },
+    LeapBackground = { bg = p.background1 },
+
     -- rcarriga/nvim-notify
     NotifyINFOBorder = { fg = p.teal1 },
     NotifyINFOTitle = { link = 'NotifyINFOBorder' },
