@@ -396,14 +396,19 @@ function M.get(config)
     PounceMatch = { link = 'Search' },
 
     -- nvim-telescope/telescope.nvim
-    TelescopeBorder = { fg = groups.border },
     TelescopeMatching = { fg = p.teal1 },
     TelescopeNormal = { fg = p.text },
-    TelescopePromptNormal = { fg = p.text },
-    TelescopePromptPrefix = { fg = p.blueGray1 },
     TelescopeSelection = { fg = p.text, bg = p.blueGray1 },
-    TelescopeSelectionCaret = { fg = p.pink2, bg = p.blueGray1 },
     TelescopeTitle = { fg = p.blueGray2 },
+    TelescopeBorder = { fg = p.background1 },
+    TelescopePromptBorder = { fg = p.background1 },
+    TelescopePromptNormal = { fg = p.text },
+    TelescopePromptPrefix = { fg = p.blueGray2 },
+    TelescopePreviewTitle = { fg = p.background2, bg = p.teal1 },
+    TelescopePromptTitle = { fg = p.background2, bg = p.blue1 },
+    TelescopeResultsDiffAdd = { fg = p.teal1 },
+    TelescopeResultsDiffChange = { fg = p.yellow },
+    TelescopeResultsDiffDelete = { fg = p.pink3 },
 
     -- phaazon/hop.nvim
     HopNextKey = { fg = p.blue1 },
