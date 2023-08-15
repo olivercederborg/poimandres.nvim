@@ -20,7 +20,7 @@ function M.get(config)
     ColorColumn = { bg = p.blueGray1 },
     Conceal = { bg = p.none },
     CurSearch = { link = 'IncSearch' },
-    -- Cursor = {},
+    Cursor = { fg = p.background3, bg = p.blueGray1 },
     CursorColumn = { bg = p.background1 },
     -- CursorIM = {},
     CursorLine = { bg = p.background1 },
@@ -43,7 +43,7 @@ function M.get(config)
     Folded = { fg = p.text, bg = groups.panel },
     IncSearch = { fg = p.background3, bg = p.blue2 },
     LineNr = { fg = p.blueGray3 },
-    MatchParen = { bg = p.blueGray3, fg = p.background3 },
+    MatchParen = { fg = p.background3, bg = p.blueGray3 },
     ModeMsg = { fg = p.blue3 },
     MoreMsg = { fg = p.blue3 },
     NonText = { fg = p.blue4 },
@@ -396,14 +396,19 @@ function M.get(config)
     PounceMatch = { link = 'Search' },
 
     -- nvim-telescope/telescope.nvim
-    TelescopeBorder = { fg = groups.border },
     TelescopeMatching = { fg = p.teal1 },
     TelescopeNormal = { fg = p.text },
-    TelescopePromptNormal = { fg = p.text },
-    TelescopePromptPrefix = { fg = p.blueGray1 },
-    TelescopeSelection = { fg = p.text, bg = p.blueGray1 },
-    TelescopeSelectionCaret = { fg = p.pink2, bg = p.blueGray1 },
+    TelescopeSelection = { fg = p.text, bg = p.background1 },
     TelescopeTitle = { fg = p.blueGray2 },
+    TelescopeBorder = { fg = p.background1 },
+    TelescopePromptBorder = { fg = p.background1 },
+    TelescopePromptNormal = { fg = p.text },
+    TelescopePromptPrefix = { fg = p.blueGray2 },
+    TelescopePreviewTitle = { fg = p.background2, bg = p.teal1 },
+    TelescopePromptTitle = { fg = p.background2, bg = p.blue1 },
+    TelescopeResultsDiffAdd = { fg = p.teal1 },
+    TelescopeResultsDiffChange = { fg = p.yellow },
+    TelescopeResultsDiffDelete = { fg = p.pink3 },
 
     -- phaazon/hop.nvim
     HopNextKey = { fg = p.blue1 },
@@ -411,6 +416,13 @@ function M.get(config)
     HopNextKey2 = { fg = p.teal2 },
     HopUnmatched = { fg = p.blueGray3 },
     HopCursor = { fg = p.blue3 },
+
+    -- ggandor/leap.nvim
+    LeapMatch = { fg = p.background2, bg = p.pink2 },
+    LeapLabelPrimary = { fg = p.background2, bg = p.teal1 },
+    LeapLabelSecondary = { fg = p.background2, bg = p.blue1 },
+    LeapLabelSelected = { fg = p.background2, bg = p.yellow },
+    LeapBackground = { bg = p.background1 },
 
     -- rcarriga/nvim-notify
     NotifyINFOBorder = { fg = p.teal1 },
