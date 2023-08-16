@@ -48,9 +48,33 @@ _More plugins will be supported as I personally need it, or when it is requested
 
 ## 📦 Installation
 
-Install with [packer](https://github.com/wbthomason/packer.nvim):
-
 _**IMPORTANT!** The `setup` function has to be invoked before the colorscheme is set!_
+
+Install with [lazy.nvim](https://github.com/folke/lazy.nvim):
+
+```lua
+-- Lua
+
+{ 
+  'olivercederborg/poimandres.nvim',
+  config = function()
+    require('poimandres').setup {
+      -- leave this setup function empty for default config
+      -- or refer to the configuration section
+      -- for configuration options
+    }
+  end,
+
+  -- optionally set the colorscheme within lazy config
+  init = function()
+    vim.cmd("colorscheme poimandres")
+  end
+}
+```
+<details>
+<summary>Install with packer:</summary>
+
+[packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
 -- Lua
@@ -66,8 +90,13 @@ use {
   end
 }
 ```
+</details>
 
-Install with [vim-plug](https://github.com/junegunn/vim-plug):
+<details>
+<summary>Install with vim-plug:</summary>
+  
+[vim-plug](https://github.com/junegunn/vim-plug)
+  
 ```vim
 " Vim Script
 
@@ -82,9 +111,14 @@ lua << EOF
 EOF
 ```
 
+</details>
+
+
 ## 🚀 Usage
 
 **Enable the colorscheme**:
+
+_**IMPORTANT!** The `setup` function has to be invoked before the colorscheme is set!_
 
 ```lua
 -- Lua
