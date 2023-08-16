@@ -58,7 +58,7 @@ Install with [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 { 
   'olivercederborg/poimandres.nvim',
-	lazy = false,
+  lazy = false,
   priority = 1000,
   config = function()
     require('poimandres').setup {
