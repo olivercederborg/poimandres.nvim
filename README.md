@@ -43,6 +43,7 @@ All variants of the theme will be available for use.
 - [Lualine](https://github.com/hoob3rt/lualine.nvim)
 - [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [Hop](https://github.com/phaazon/hop.nvim)
+- [Leap](https://github.com/ggandor/leap.nvim)
 
 _More plugins will be supported as I personally need it, or when it is requested._
 
