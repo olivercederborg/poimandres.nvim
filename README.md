@@ -107,9 +107,9 @@ Plug 'olivercederborg/poimandres.nvim'
 
 lua << EOF
   require('poimandres').setup {
-    " leave this setup function empty for default config
-    " or refer to the configuration section
-    " for configuration options
+    -- leave this setup function empty for default config
+    -- or refer to the configuration section
+    -- for configuration options
   }
 EOF
 ```
