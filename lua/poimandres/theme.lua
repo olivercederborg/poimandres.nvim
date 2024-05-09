@@ -459,6 +459,13 @@ function M.get(config)
     DashboardKey = { fg = p.blue2 },
     DashboardIcon = { fg = p.blue2 },
     DashboardShortCut = { fg = p.blue2 },
+
+    -- nvim-neo-tree/neo-tree.nvim
+    NeoTreeModified = { fg = p.teal1 },
+    NeoTreeGitModified = { fg = p.teal1 },
+    NeoTreeGitUntracked = { fg = p.yellow },
+    NeoTreeGitUnstaged = { fg = p.yellow },
+    NeoTreeFileName = { fg = p.text },
     -- glepnir/lspsaga.nvim
     TitleString = { fg = p.blue2 },
     TitleIcon = { fg = p.blue2 },
