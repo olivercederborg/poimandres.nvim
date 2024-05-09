@@ -37,13 +37,13 @@ function M.get(config)
     Directory = { fg = p.blue3, bg = p.none },
     -- EndOfBuffer = {},
     ErrorMsg = { fg = p.pink3, style = 'bold' },
-    FloatBorder = { fg = groups.border },
+    FloatBorder = { fg = p.blueGray2 },
     FloatTitle = { fg = p.blueGray2 },
     FoldColumn = { fg = p.blueGray2 },
     Folded = { fg = p.text, bg = groups.panel },
     IncSearch = { fg = p.background3, bg = p.blue2 },
     LineNr = { fg = p.blueGray3 },
-    MatchParen = { fg = p.background3, bg = p.blueGray3 },
+    MatchParen = { fg = p.blue2, bg = p.blueGray3 },
     ModeMsg = { fg = p.blue3 },
     MoreMsg = { fg = p.blue3 },
     NonText = { fg = p.blue4 },
@@ -466,6 +466,7 @@ function M.get(config)
     NeoTreeGitUntracked = { fg = p.yellow },
     NeoTreeGitUnstaged = { fg = p.yellow },
     NeoTreeFileName = { fg = p.text },
+
     -- glepnir/lspsaga.nvim
     TitleString = { fg = p.blue2 },
     TitleIcon = { fg = p.blue2 },
