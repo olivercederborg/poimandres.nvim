@@ -452,6 +452,13 @@ function M.get(config)
     NotifyERRORTitle = { link = 'NotifyERRORBorder' },
     NotifyERRORIcon = { link = 'NotifyERRORBorder' },
 
+    -- nvimdev/dashboard-nvim
+    DashboardHeader = { fg = p.blue2 },
+    DashboardFooter = { fg = p.blue2 },
+    DashboardDesc = { fg = p.text },
+    DashboardKey = { fg = p.blue2 },
+    DashboardIcon = { fg = p.blue2 },
+    DashboardShortCut = { fg = p.blue2 },
     -- glepnir/lspsaga.nvim
     TitleString = { fg = p.blue2 },
     TitleIcon = { fg = p.blue2 },
