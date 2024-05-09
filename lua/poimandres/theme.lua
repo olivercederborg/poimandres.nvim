@@ -252,6 +252,9 @@ function M.get(config)
     ['@keyword.export.tsx'] = { fg = p.teal1 },
     ['@keyword.import.tsx'] = { fg = p.teal1 },
     ['@import.identifier.tsx'] = { fg = p.blue2 },
+    ['@lsp.type.variable.typescriptreact'] = { fg = p.text },
+    ['@lsp.type.parameter.typescriptreact'] = { fg = p.text },
+    ['@lsp.type.property.typescriptreact'] = { fg = p.text },
 
     -- typescript
     ['@keyword.export.typescript'] = { fg = p.teal1 },
