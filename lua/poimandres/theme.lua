@@ -282,6 +282,7 @@ function M.get(config)
 
     -- lua
     luaTSConstructor = { fg = p.blueGray1 },
+    ['@lsp.type.property.lua'] = { fg = p.text },
 
     -- css
     cssTSFunction = { fg = p.blueGray1 },
