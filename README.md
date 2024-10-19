@@ -176,6 +176,7 @@ Feel free to help improving the color scheme by opening issues and PRs with feat
 - [poimandres-theme](https://github.com/drcmda/poimandres-theme): VSCode version
 - [poimandres-alacritty](https://github.com/z0al/poimandres-alacritty): Alacritty version
 - [poimandres-iterm](https://github.com/alii/poimandres-iterm): Iterm version
+- [poimandres.zed](https://github.com/mshaugh/poimandres.zed): Zed version
 
 ### Hyper theme
 
